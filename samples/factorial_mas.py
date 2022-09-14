@@ -4,7 +4,7 @@
 
 import sys
 
-#sys.path.insert(0, "../lib")
+#
 
 from phidias.Types  import *
 from phidias.Main import *

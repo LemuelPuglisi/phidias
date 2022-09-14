@@ -1,13 +1,18 @@
-#!/usr/bin/env python
+import setuptools
 
-from distutils.core import setup
-
-setup(name='PHIDIAS',
-      version='1.1.0',
-      description='PytHon Interactive Declarative Intelligent Agent System',
-      author='Corrado Santoro',
-      author_email='santoro@dmi.unict.it',
-      url='http://github.com/corradosantoro/phidias',
-      packages=['phidias'],
-      package_dir={'phidias': 'lib/phidias' }
-)
+setuptools.setup(name='phidias',
+                 version='1.1.0',
+                 description='phidias',
+                 long_description=open('README.md').read().strip(),
+                 author='Corrado Santoro',
+                 py_modules=['phidias'],
+                 install_requires=['requests', 'parse'],
+                 license='MIT License',
+                 zip_safe=False,
+                 keywords='phidias',
+                 classifiers=[
+                    'Intended Audience :: Developers',
+                    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+                    'License :: MIT License',
+                    'Programming Language :: Python :: 3.9',
+                ])
