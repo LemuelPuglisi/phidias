@@ -5,8 +5,8 @@
 #from __future__ import print_function
 import sys
 
-if sys.implementation.name != "micropython":
-    import readline
+# if sys.implementation.name != "micropython":
+    # import readline
 
 import threading
 #import copy
@@ -134,12 +134,12 @@ class SHELL:
                 self.__current_agent = a.__name__
 
     def run(self):
-        if sys.implementation.name != "micropython":
-            c = Completer([ "help", "assert", "+", "retract", "-", "agents", "agent",
-                            "plans", "kb", "waiting", "quit" ])
-            readline.set_completer(c.complete)
-            readline.parse_and_bind('tab: complete')
-            readline.parse_and_bind('set editing-mode vi')
+        # if sys.implementation.name != "micropython":
+        #     c = Completer([ "help", "assert", "+", "retract", "-", "agents", "agent",
+        #                     "plans", "kb", "waiting", "quit" ])
+        #     readline.set_completer(c.complete)
+        #     readline.parse_and_bind('tab: complete')
+        #     readline.parse_and_bind('set editing-mode vi')
         print("")
         print("\tPHIDIAS Release 1.3.5 (deepcopy-->clone,micropython,py3)")
         print("\tAutonomous and Robotic Systems Laboratory")
